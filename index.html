@@ -15,7 +15,7 @@
 		<a-scene id="scene" embedded arjs=’sourceType: webcam;’ physics="debug: true">
 		
 			<a-marker preset='kanji'>
-				<a-box dynamic-body position='0 0.5 0' color="#cc7a00" ></a-box>
+				<a-box position='0 0.5 0' color="#cc7a00" ></a-box>
 					<a-cylinder id="laser"  
 					position="3 0.5 0" 
 					rotation="0 0 90"  
@@ -28,20 +28,13 @@
 			</a-marker>
 
 			<a-marker preset='hiro'>
-					<a-tetrahedron dynamic-body id="prism" 
+					<a-tetrahedron id="prism" 
 					radius = 1 
 					rotation="30 200 135" 
 					position="0 0.5 0" 
 					material="opacity: 0.8;"
 					aabb-collider="objects: #laser"></a-tetrahedron>
 			</a-marker>
-			<script>    var laser = document.querySelector('#prism');
-			laser.addEventListener('collide', function(e) 
-			{
-				laser.setAttribute('color',"#ff0000")
-				laser.setAttribute('visible','false')
-			});
-			</script>
 			<a-entity camera></a-entity>
 		</a-scene>
 	</body>
