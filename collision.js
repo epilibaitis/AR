@@ -1,5 +1,5 @@
-    var laser = document.querySelector('#laser');
-    laser.addEventListener('collide', function() 
+    var laser = document.querySelector('#prism');
+    laser.addEventListener('collide', function(e) 
     {
         laser.setAttribute('color',"#ffffff")
     });
