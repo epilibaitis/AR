@@ -1,5 +1,5 @@
     var laser = document.querySelector('#laser');
     laser.addEventListener('collide', function() 
     {
-        laser.setAttribute('color',"#ff0000")
+        laser.setAttribute('color',"#ffffff")
     });
