@@ -21,7 +21,6 @@
 						radius="0.04" 
 						height= "5" 
 						color="#ffffff"
-						aabb-collider="objects: #prism" 
 					></a-cylinder>
 					<a-cylinder id="laser"  
 						position="3 0.3 0" 
@@ -41,8 +40,8 @@
 						height= "5" 
 						material="opacity:0.1 ;color:red;"
 						aabb-collider="objects: #laser"
-						event-set__hitstart="material.color: yellow"
-						event-set__hitend="material.color: red"
+						event-set__hitstart="material.color: yellow; opacity:0.1"
+						event-set__hitend="material.opacity: 0.0"
 					></a-cylinder>
 					<a-tetrahedron id="prism" 
 						rotation="30 200 135" 
