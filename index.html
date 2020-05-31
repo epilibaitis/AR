@@ -26,14 +26,13 @@
 			</a-marker>
 
 			<a-marker preset='hiro'>
-					<a-tetrahedron id="prism" 
+					<a-box id="prism" 
 					rotation="30 200 135" 
-					position="0 0.5 0"
-					scale="0.5" 
+					position="0 0.5 0" 
 					material="opacity: 0.8;"
 					aabb-collider="objects: #laser"
 					event-set__hitstart="material.color: yellow"
-					event-set__hitend="material.color: red"></a-tetrahedron>
+					event-set__hitend="material.color: red"></a-box>
 			</a-marker>
 			<a-entity camera></a-entity>
 		</a-scene>
