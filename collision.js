@@ -1,4 +1,4 @@
-    var laser = document.querySelector('a-cylinder');
+    var laser = document.querySelector('#laser');
     laser.addEventListener('collide', function() 
     {
         laser.setAttribute('color',"#ffffff")
