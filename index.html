@@ -11,7 +11,7 @@
 <html>
 	
 	<body>
-		<a-scene physics="debug: true" embedded arjs=’sourceType: webcam;’>
+		<a-scene  embedded arjs=’sourceType: webcam;’ physics="debug: true">
 		
 			<a-marker preset='kanji'>
 				<a-box position='0 0.5 0' color="#cc7a00" ></a-box>
@@ -24,7 +24,7 @@
 			</a-marker>
 
 			<a-marker preset='hiro'>
-					<a-tetrahedron id="prism" 
+					<a-tetrahedron dynamic-body id="prism" 
 					radius = 1 
 					rotation="30 200 135" 
 					position="0 0.5 0" 
