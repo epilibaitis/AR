@@ -12,7 +12,9 @@
 	
 	<body style='margin:0px; overflow: hidden;';>
 		<a-scene id="scene" embedded arjs=’sourceType: webcam;’>
-		
+			
+			<!-- Kanji marker responsible for acting as the light emitter -->
+
 			<a-marker preset='kanji'>
 				<a-box position='0 0.5 0' height="0.6"color="#cc7a00" ></a-box>
 					<a-cylinder  
@@ -27,23 +29,21 @@
 						rotation="0 0 90"  
 						radius="0.0005" 
 						height= "5" 
-						material="opacity:0.1"
-						aabb-collider="objects: #rainbow" 
+						material="visible:false"
+						aabb-collider="objects: #reflection" 
 					></a-cylinder>
 			</a-marker>
-
+			<!-- Hiro marker responsible for acting as the mirror and the light coming off of the mirror -->
 			<a-marker preset='hiro'>
-					<a-cylinder id="rainbow"
+					<a-cylinder id="reflection"
 						rotation="0 90 90"  
 						position="0 0.6 2.6" 
 						radius="0.05" 
 						height= "5" 
-						material="opacity:0.1 ;color:red;"
+						material="opacity:0.3 ;color:white;"
 						aabb-collider="objects: #laser"
 						event-set__hitstart="rotation: 0 0 90;material.visible:true;"
 						event-set__hitend="material.visible:false;"
-						event-set__otherstart="_event: hitstart; _target: #laser; material.visible: true; "
-						event-set__otherend="_event: hitend; _target: #laser; material.visible: false;"
 					></a-cylinder>
 					<a-tetrahedron id="prism" 
 						rotation="30 200 135" 
@@ -53,6 +53,8 @@
 
 					
 			</a-marker>
+
+			<!-- Camera entity within the scene -->
 			<a-entity camera></a-entity>
 		</a-scene>
 	</body>
