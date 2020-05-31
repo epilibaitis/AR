@@ -40,7 +40,7 @@
 						height= "5" 
 						material="opacity:0.1 ;color:red;"
 						aabb-collider="objects: #laser"
-						event-set__hitstart="material.visible:true;"
+						event-set__hitstart="rotation: 0 0 90;material.visible:true;"
 						event-set__hitend="material.visible:false;"
 						event-set__otherstart="_event: hitstart; _target: #laser; material.visible: true; "
 						event-set__otherend="_event: hitend; _target: #laser; material.visible: false;"
