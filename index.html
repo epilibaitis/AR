@@ -4,7 +4,6 @@
 	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 	<script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
   	<script src="https://unpkg.com/aframe-aabb-collider-component@^2.2.1/dist/aframe-aabb-collider-component.min.js"></script>
-	<script src="collision.js"></script>
 
 	
 
@@ -12,7 +11,7 @@
 <html>
 	
 	<body>
-		<a-scene id="scene" embedded arjs=’sourceType: webcam;’ physics="debug: true">
+		<a-scene id="scene" embedded arjs=’sourceType: webcam;’>
 		
 			<a-marker preset='kanji'>
 				<a-box position='0 0.5 0' color="#cc7a00" ></a-box>
