@@ -30,7 +30,13 @@
 					position="0 0.5 0" 
 					material="opacity: 0.8;"></a-tetrahedron>
 			</a-marker>
-
+			<script>    var laser = document.querySelector('#prism');
+			laser.addEventListener('collide', function(e) 
+			{
+				laser.setAttribute('color',"#ff0000")
+				laser.setAttribute('visible','false')
+			});
+			</script>
 			<a-entity camera></a-entity>
 		</a-scene>
 	</body>
