@@ -44,9 +44,15 @@
 						event-set__otherstart="material.color:red"
 						event-set__otherend="material.color: red"
 						></a-tetrahedron>
-					<a-cylinder id="rainbow">
-						
-					</a-cylinder>
+					<a-cylinder id="rainbow"
+						position="3 0.5 0" 
+						rotation="0 0 90"  
+						radius="0.05" 
+						height= "5" 
+						material="opacity:0.1"
+						color="ff0000"
+						aabb-collider="objects: #prism">
+					></a-cylinder>
 			</a-marker>
 			<a-entity camera></a-entity>
 		</a-scene>
