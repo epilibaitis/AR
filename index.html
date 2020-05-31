@@ -15,24 +15,24 @@
 		
 			<a-marker preset='kanji'>
 				<a-box position='0 0.5 0' color="#cc7a00" ></a-box>
-					<a-cylinder id="laser"  
+					<a-box id="laser"  
 					position="3 0.5 0" 
 					rotation="0 0 90"  
 					radius="0.04" 
 					height= "5" 
 					color="#ffffff"
 					aabb-collider="objects: #prism" 
-								></a-cylinder>
+								></a-box>
 			</a-marker>
 
 			<a-marker preset='hiro'>
-					<a-box id="prism" 
+					<a-tetrahedron id="prism" 
 					rotation="30 200 135" 
 					position="0 0.5 0" 
 					material="opacity: 0.8;"
 					aabb-collider="objects: #laser"
 					event-set__hitstart="material.color: yellow"
-					event-set__hitend="material.color: red"></a-box>
+					event-set__hitend="material.color: red"></a-tetrahedron>
 			</a-marker>
 			<a-entity camera></a-entity>
 		</a-scene>
