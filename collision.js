@@ -1,5 +1,5 @@
-    var aBox = document.querySelector('#box');
-    aBox.addEventListener('collide', function() 
+    var laser = document.querySelector('#laser');
+    laser.addEventListener('collide', function() 
     {
-        aBox.setAttribute('scale',{x: 2, y: 2, z: 2})
+        laser.setAttribute('color',"#ff0000")
     });
