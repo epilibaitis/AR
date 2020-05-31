@@ -15,12 +15,20 @@
 		
 			<a-marker preset='kanji'>
 				<a-box position='0 0.5 0' color="#cc7a00" ></a-box>
-					<a-cylinder id="laser"  
+					<a-cylinder  
 						position="3 0.5 0" 
 						rotation="0 0 90"  
 						radius="0.04" 
 						height= "5" 
 						color="#ffffff"
+						aabb-collider="objects: #prism" 
+					></a-cylinder>
+					<a-cylinder id="laser"  
+						position="3 0.5 0" 
+						rotation="0 0 90"  
+						radius="0.01" 
+						height= "5" 
+						material="opacity:0.1"
 						aabb-collider="objects: #prism" 
 					></a-cylinder>
 			</a-marker>
