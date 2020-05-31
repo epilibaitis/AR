@@ -13,11 +13,11 @@
 		
 			<a-marker preset='kanji'>
 				<a-box position='0 0.5 0' color="#cc7a00" ></a-box>
-					<a-cylinder  position="3 0.5 0" rotation="0 0 90"  radius="0.04" height= "5" color="#ff0000"></a-cylinder>
+					<a-cylinder id="laser"  position="3 0.5 0" rotation="0 0 90"  radius="0.04" height= "5" scale= "2"color="#ff0000"></a-cylinder>
 			</a-marker>
 
 			<a-marker preset='hiro'>
-					<a-tetrahedron radius = 1 rotation="30 200 135" position="0 0.5 0" material="opacity: 0.8;" ></a-tetrahedron>
+					<a-tetrahedron id="prism" radius = 1 rotation="30 200 135" position="0 0.5 0" material="opacity: 0.8;" ></a-tetrahedron>
 			</a-marker>
 
 			<a-entity camera></a-entity>
